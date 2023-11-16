@@ -23,7 +23,15 @@ router.get('/', (req, res) => {
 
     if (category) {
         // El método filter devuelve siempre un arreglo
-        res.json(ITEMS.filter(item => item.category === category))
+
+        // Status-codes (dev05)
+        const filteredItems = ITEMS.filter(item => item.category === category)
+
+        if (filteredItems.length > 0) {
+            res.status(200).json(filteredItems)
+        } else {
+            res.status(204).send()
+        }
     } else {
         res.json(ITEMS)
     }
@@ -54,7 +62,7 @@ router.get('/:id', (req, res) => {
 // post (dev04)
 router.post('/', (req, res) => {
     const body = req.body
-    res.json({
+    res.status(201).json({ // Status-codes (dev05)
         message: "created",
         data: body
     })

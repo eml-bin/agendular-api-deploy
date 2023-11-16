@@ -22,3 +22,5 @@
 
 ### PUT / PATCH / DELETE (dev05)
 
+* New Routes
+* Status Codes 

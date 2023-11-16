@@ -3,6 +3,8 @@ const routerAPI = require('./routes')
 const app = express()
 const PORT = 3000
 
+app.use(express.json()) // middleware (dev04)
+
 app.get('/', (req, res) => {
     // req. request
     // res. response

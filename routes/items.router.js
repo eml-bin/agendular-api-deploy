@@ -60,4 +60,35 @@ router.post('/', (req, res) => {
     })
 })
 
+// patch (dev05)
+router.patch('/:id', (req, res) => {
+    const { id } = req.params
+    const body = req.body
+    res.json({
+        message: "update",
+        data: body,
+        id
+    })
+})
+
+// put (dev05)
+router.put('/:id', (req, res) => {
+    const { id } = req.params
+    const body = req.body
+    res.json({
+        message: "update",
+        data: body,
+        id
+    })
+})
+
+// delete (dev05)
+router.delete('/:id', (req, res) => {
+    const { id } = req.params
+    res.json({
+        message: "deleted",
+        id
+    })
+})
+
 module.exports = router

@@ -19,3 +19,6 @@
 ### POST (dev04)
 
 * Middleware
+
+### PUT / PATCH / DELETE (dev05)
+

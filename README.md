@@ -10,3 +10,7 @@
 * Params (obligatorios)
 * Query-Params (opcionales)
 * Choque de Rutas (issue)
+
+### Separación de Responsabilidades (dev03)
+
+* Router

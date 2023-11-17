@@ -1,6 +1,6 @@
 // Servicio de Dailies con BD SQLite (dev06)
 
-const getConnection = require("../config/sqlite");
+const getConnection = require("../data/sqlite");
 
 class DailiesService {
     constructor() {

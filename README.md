@@ -29,3 +29,11 @@
 
 * Create Dailies Service (Clean Architecture)
 * Sqlite3
+
+### SEQUELIZE (dev07)
+
+* Configuración de sequelize
+* Modelos de sequelize
+* Implementación de ORM
+* Demostración de Queries puros
+* Dailies Service con ORM

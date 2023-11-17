@@ -7,7 +7,7 @@ function routerApi(app) {
     app.use('/api/v1', router)
     
     router.use('/items', itemsRouter);
-    router.use('/dailies', dailiesRouter);
+    router.use('/dailies', dailiesRouter); // (dev07)
 }
 
 module.exports = routerApi

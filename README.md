@@ -24,3 +24,8 @@
 
 * New Routes
 * Status Codes 
+
+### SERVICES / SQLITE (dev06)
+
+* Create Dailies Service (Clean Architecture)
+* Sqlite3

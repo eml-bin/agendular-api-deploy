@@ -37,3 +37,11 @@
 * Implementación de ORM
 * Demostración de Queries puros
 * Dailies Service con ORM
+
+### MIGRATIONS (dev08)
+
+* Configuración de Librería Migraciones
+* Configurar comando de Migraciones
+* Ejecutar comando para crear migraciones
+* Trabajar sobre archivos de migraciones
+* Ejecutar migraciones trabajadas

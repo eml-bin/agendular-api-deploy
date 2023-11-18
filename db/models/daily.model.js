@@ -19,6 +19,12 @@ const DailySchema = {
         allowNull: false,
         type: DataTypes.STRING,        
     },
+    // Nueva columna para migración (dev08)
+    color: {
+        allowNull: false,
+        type: DataTypes.STRING,
+        defaultValue: '#00ba73'
+    },
     timestamp: {
         allowNull: false,
         type: DataTypes.INTEGER,

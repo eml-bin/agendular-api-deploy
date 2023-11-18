@@ -46,6 +46,7 @@
 * Trabajar sobre archivos de migraciones
 * Ejecutar migraciones trabajadas
 
-## MIDDLEWARES
+## CUSTOM-MIDDLEWARES
 
-* Manejo de Errores
+* Manejo de Errores (boom)
+* Validaciones de Data (joi)

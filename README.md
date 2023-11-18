@@ -2,19 +2,22 @@
 
 ## Primeros Pasos
 
-1. Crear carpeta API -> `mkdir agendular-api`
+1. Clonar o Descargar Repositorio rama `starter`
 2. Comenzar proyecto NodeJS -> `npm init -y`
-3. Configurar proyecto
-    * Crear index.js 📄
-    * Crear .gitignore 📄
-    * Crear .eslintrc.json 📄
 
 4. Instalar Dependencias de Desarrollo:
-    - nodemon
-    - eslint eslint-config-prettier eslint-plugin-prettier prettier
+    - nodemon           (Servidor de Desarrollo)
+    - eslint            (Reglas de Código)
+    - prettier          (Formato de Código)
+    - sequelize-cli     (Herramienta de Sequelize para migraciones)
 
-    - `npm i nodemon eslint eslint-config-prettier eslint-plugin-prettier prettier -D`
+    - `npm i nodemon eslint eslint-config-prettier eslint-plugin-prettier prettier sequelize-cli -D`
 
 5. Instalar Dependencias de Producción:
-    - express
-    - `npm i express`
+    - express       (Framework App)
+    - sequelize     (ORM)
+    - sqlite3       (Motor Lígero de BD)
+    - `npm i express sequelize sqlite3`
+
+6. Configurar comandos `package.json`
+7. Configurar express entrypoint `index.js`

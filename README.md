@@ -21,3 +21,8 @@
 
 6. Configurar comandos `package.json`
 7. Configurar express entrypoint `index.js`
+
+## Herramientas de Utilidad
+* [Postman (API Tester)](https://www.postman.com/downloads/)
+* [Insomnia (API Tester)](https://insomnia.rest/download)
+* [DBeaver Community (DB Viewer)](https://dbeaver.io/download/)

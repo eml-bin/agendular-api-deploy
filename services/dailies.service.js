@@ -1,8 +1,8 @@
 // Servicio de Dailies con BD SQLite (dev06)
 
-// const getConnection = require("../data/sqlite");
-const sequelize = require('../data/sequelize')
-const { models } = require('../data/sequelize')
+// const getConnection = require("../config/sqlite");
+const sequelize = require('../config/sequelize')
+const { models } = require('../config/sequelize')
 
 class DailiesService {
     constructor() {

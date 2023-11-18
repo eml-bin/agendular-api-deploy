@@ -45,3 +45,7 @@
 * Ejecutar comando para crear migraciones
 * Trabajar sobre archivos de migraciones
 * Ejecutar migraciones trabajadas
+
+## MIDDLEWARES
+
+* Manejo de Errores

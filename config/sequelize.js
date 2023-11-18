@@ -2,7 +2,7 @@
 
 const { Sequelize } = require('sequelize')
 
-const setupModels = require('./../db/models')
+const setupModels = require('../db/models')
 
 const sequelize = new Sequelize({
     dialect: 'sqlite',

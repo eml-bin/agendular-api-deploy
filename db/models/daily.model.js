@@ -23,7 +23,7 @@ const DailySchema = {
     color: {
         allowNull: false,
         type: DataTypes.STRING,
-        defaultValue: '#00ba73'
+        defaultValue: '#03331f'
     },
     timestamp: {
         allowNull: false,

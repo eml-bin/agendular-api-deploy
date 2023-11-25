@@ -1,12 +1,10 @@
 const express = require('express')
 const routerAPI = require('./routes')
-const cors = require('cors')
 const app = express()
 const PORT = 3000
 
 const { loggerError, errorHandler, boomErrorHandler } = require('./middlewares/error.middleware')
 
-app.use(cors())
 app.use(express.json()) // middleware (dev04)
 
 app.get('/', (req, res) => {

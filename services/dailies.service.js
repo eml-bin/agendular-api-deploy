@@ -87,6 +87,20 @@ class DailiesService {
         return dailyChange
 
     }
+
+    async findOne(id) {
+        const daily = await models.Daily.findOne({
+            where: {
+                id: id
+            }
+        })
+
+        if (!daily) {
+            throw boom.notFound('daily not found')
+        }
+
+        return daily
+    }
 }
 
 module.exports = DailiesService;

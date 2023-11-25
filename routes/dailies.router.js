@@ -36,6 +36,20 @@ router.get("/", async (req, res, next) => {
     }
 });
 
+// Obtener dailies con sequelize ORM (dev07)
+router.get("/:id", async (req, res, next) => {
+    try {
+
+        const { id } = req.params
+
+        const daily = await service.findOne(id);
+        res.json(daily);
+        
+    } catch (error) {
+        next(error);
+    }
+});
+
 // Actualizar daily
 router.put("/", validatorHandler(updateDailySchema, "body"), async (req, res, next) => {
     try {

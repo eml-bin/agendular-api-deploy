@@ -17,31 +17,31 @@ module.exports = {
                 note: "Daily Lunes, iniciando la semana x_x",
                 emotion: "😪",
                 color: "#03331f",
-                daily_timestamp: new Date(2023, 11, 20).getTime()
+                daily_timestamp: (new Date(2023, 11, 20).getTime()/1000)
             },
             {
                 note: "Daily Martes, día dos, viernes lejos",
                 emotion: "😐",
                 color: "#03331f",
-                daily_timestamp: new Date(2023, 11, 21).getTime()
+                daily_timestamp: (new Date(2023, 11, 21).getTime()/1000)
             },
             {
                 note: "Daily Miércoles, ya casi veo pronto el descanse",
                 emotion: "🙂",
                 color: "#03331f",
-                daily_timestamp: new Date(2023, 11, 22).getTime()
+                daily_timestamp: (new Date(2023, 11, 22).getTime()/1000)
             },
             {
                 note: "Daily Jueves, por fin tengo energía para continuar",
                 emotion: "😁",
                 color: "#03331f",
-                daily_timestamp: new Date(2023, 11, 23).getTime()
+                daily_timestamp: (new Date(2023, 11, 23).getTime()/1000)
             },
             {
                 note: "Daily Viernes, el mejor día de la semana",
                 emotion: "😍",
                 color: "#03331f",
-                daily_timestamp: new Date(2023, 11, 24).getTime()
+                daily_timestamp: (new Date(2023, 11, 24).getTime()/1000)
             },
         ]);
     },

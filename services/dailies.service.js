@@ -48,7 +48,11 @@ class DailiesService {
     // Crear método para obtener todos (dev06)
     async all() {
         // Utilizar findAll de ORM Sequelize (dev07)
-        const dailies = await models.Daily.findAll()
+        const dailies = await models.Daily.findAll({
+            order: [
+                ['timestamp', 'DESC']
+            ]
+        })
         return dailies
 
 
@@ -86,6 +90,20 @@ class DailiesService {
 
         return dailyChange
 
+    }
+
+    async findOne(id) {
+        const daily = await models.Daily.findOne({
+            where: {
+                id: id
+            }
+        })
+
+        if (!daily) {
+            throw boom.notFound('daily not found')
+        }
+
+        return daily
     }
 }
 

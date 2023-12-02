@@ -4,11 +4,14 @@ const { Sequelize } = require('sequelize')
 
 const setupModels = require('../db/models')
 
-const sequelize = new Sequelize({
-    dialect: 'sqlite',
-    storage: 'database.db',
-    logging: true
-})
+const { envVars } = require('./env')
+const sequelizeConfigs = require('../db/config')
+
+const sequelize = new Sequelize(
+    envVars.env === 'production'
+        ? sequelizeConfigs.production
+        : sequelizeConfigs.development
+)
 
 // Se añaden modelos (dev07)
 setupModels(sequelize)

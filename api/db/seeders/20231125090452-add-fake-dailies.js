@@ -12,7 +12,7 @@ module.exports = {
          *   isBetaMember: false
          * }], {});
          */
-        await queryInterface.bulkInsert("Dailies", [
+        await queryInterface.bulkInsert("dailies", [
             {
                 note: "Daily Lunes, iniciando la semana x_x",
                 emotion: "😪",

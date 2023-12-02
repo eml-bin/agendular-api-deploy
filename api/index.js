@@ -1,3 +1,5 @@
+// Test PR
+
 const express = require('express')
 const routerAPI = require('./routes')
 const cors = require('cors')
@@ -17,11 +19,11 @@ app.use(express.json()) // middleware (dev04)
 
 app.use(cors())
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
     // req. request
     // res. response
     
-    res.send('Server en express')
+    res.send('Agendular API')
 })
 
 routerAPI(app)
